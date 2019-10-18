@@ -53,3 +53,6 @@ But subtle changes.
 ### use functions
 > due: 10-24
 
+## Other resources
+- [api-introduction](https://vue-composition-api-rfc.netlify.com/#api-introduction)
+- [api.htm](https://vue-composition-api-rfc.netlify.com/api.html#setup)
