@@ -1,6 +1,6 @@
 # vue3.0-composition-demo
 
-Hi, I'm realy excited that Vue 3 source code is public[github.com/vuejs/vue-next].The killer feature of Vue 3 is composition api.In this demo, i will show some usecases, and there maybe many mistakes, but my main purpose is to show the new feature, if you get stucked or ignored ,just let me kown and make an [issue]()
+Hi, I'm realy excited that Vue 3 source code is public[github.com/vuejs/vue-next](https://github.com/vuejs/vue-next).The killer feature of Vue 3 is composition api.In this demo, i will show some usecases, and there maybe many mistakes, but my main purpose is to show the new feature, if you get stucked or ignored ,just let me kown and make an [issue]()
 
 ## somthing before the demo
 There are two ways to expirence the new features.
