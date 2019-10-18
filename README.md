@@ -7,7 +7,7 @@ There are two ways to expirence the new features.
 - One is use source code to build a file to import in *script* tag.Details can be shown in [contibution guide](https://github.com/vuejs/vue-next/blob/master/.github/contributing.md#project-structure)
 - The other one is import *@vue-composition-api* in vue2.+ project to make it work.*This demo* uses this method.
 
-## Mian usecase
+## Main usecase
 There maybe many new features, i just plan to show these as follows:
 
 - [ ] reactive and refs
