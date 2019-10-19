@@ -1,12 +1,25 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <MessageProvider>
+      <div id="nav">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>
+      </div>
+      <router-view />
+    </MessageProvider>
   </div>
 </template>
+
+<script>
+import { createComponent, provide } from '@vue/composition-api'
+import { MessageProvider } from './store'
+export default createComponent({
+  name: 'App',
+  components: {
+    MessageProvider
+  }
+})
+</script>
 
 <style lang="less">
 #app {

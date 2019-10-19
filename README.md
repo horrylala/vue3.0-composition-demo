@@ -16,7 +16,6 @@ There maybe many new features, i just plan to show these as follows:
 - [ ] use functions
 
 ### reactive and refs
-> due: 10-18
 Q: What's the difference between reactive and ref
 A: They are two different writing types to observe object.
 
@@ -43,7 +42,6 @@ function handleSth (opts) {
 *reactive* likes type 2 while *ref* likes type 1
 
 ### props and computed
-> due: 10-21
 There is  not too much different between Vue 2 and Vue 3 in props and computed.
 But subtle changes.
 
