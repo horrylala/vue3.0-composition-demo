@@ -24,14 +24,14 @@ const getters = {
 export const key = Symbol('MessageStore')
 
 export const MessageProvider = createComponent({
-  setup() {
+  setup () {
     provide(key, {
       ...toRefs(state),
       ...actions,
       ...getters
     })
   },
-  render(h: any) {
+  render (h: any) {
     return h('div', this.$slots.default)
   }
 })
