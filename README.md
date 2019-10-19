@@ -10,8 +10,8 @@ There are two ways to expirence the new features.
 ## Main usecase
 There maybe many new features, i just plan to show these as follows:
 
-- [ ] reactive and refs
-- [ ] props and computed
+- [x] reactive and refs
+- [x] props and computed
 - [ ] inject / provide
 - [ ] use functions
 
