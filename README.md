@@ -12,8 +12,8 @@ There maybe many new features, i just plan to show these as follows:
 
 - [x] reactive and refs
 - [x] props and computed
-- [ ] inject / provide
-- [ ] use functions
+- [x] inject / provide
+- [x] use functions
 
 ### reactive and refs
 Q: What's the difference between reactive and ref
@@ -46,10 +46,48 @@ There is  not too much different between Vue 2 and Vue 3 in props and computed.
 But subtle changes.
 
 ### inject / provide
-> due: 10-23
+*provide* and *inject* enables dependency injection similar to vue 2.x *provide/inject*,It can only be called during setup() with a current active instance.
+In files *store/index.ts*, there is a example of *inject* and *provide* .
+
+```javascript
+import { provide, inject } from 'vue'
+
+const ThemeSymbol = Symbol()
+
+const Ancestor = {
+  setup () {
+    provide(ThemeSymbol, 'dark')
+  }
+}
+
+const Descendent = {
+  setup () {
+    const theme = inject(ThemeSymbol, 'light' /* optional value */)
+    return {
+      theme
+    }
+  }
+}
+
+```
+Of course , *provide/inject* can also retain reactivity.
+```javascript
+// in provider
+const themeRef = ref('dark')
+provide(ThemeSymbol, themeRef)
+
+// in inject
+const theme = inject(ThemeSymbol, ref('light'))
+watch(() => {
+  console.log(`theme set to :${theme.value}`)
+})
+```
+
 
 ### use functions
-> due: 10-24
+*use* is a new syntax of Vue 3.0.
+It can extract logic usage and reuse some code, for example , scroll event and touch event and so on. 
+
 
 ## Other resources
 - [api-introduction](https://vue-composition-api-rfc.netlify.com/#api-introduction)
